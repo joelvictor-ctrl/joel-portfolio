@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 
 // Render the About Me page when someone visits /about.
 router.get('/about', function (req, res) {
-  res.render('about', { title: 'About Me' });
+  res.render('layout', { title: 'About Me', page: 'about' });
 });
 
 router.get('/projects', function (req, res) {
