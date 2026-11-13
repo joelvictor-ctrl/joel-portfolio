@@ -1,8 +1,627 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+/* 
+   HEADER - SAME ON EVERY PAGE
+    */
+
+header {
+    background-color: #025373;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
 
-a {
-  color: #00B7FF;
+
+/* Joel Victor */
+
+header h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+
+/* Navigation */
+
+nav {
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Navigation Links */
+
+nav a {
+    display: inline-block;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+
+    margin-left: 20px;
+    margin-right: 20px;
+
+    padding: 8px 12px;
+}
+
+
+/* Navigation Hover */
+
+nav a:hover {
+    background-color: #79C4F2;
+    color: #048ABF;
+}
+
+#wrapper {
+    width: 960px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: white;
+}
+
+/* 
+   REMOVE SPACE AROUND PAGE
+    */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 
+   CONTACT PAGE
+    */
+
+#contact {
+    width: 100%;
+    box-sizing: border-box;
+
+    margin: 0;
+
+    background-color: #F2F0F2;
+
+    padding: 40px 60px;
+
+    border-top: 6px solid #048ABF;
+}
+
+
+/* CONTACT TITLE */
+
+#contact h2 {
+    color: #025373;
+
+    text-align: center;
+
+    font-size: 32px;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+/* INTRODUCTION */
+
+#contact .contact-intro {
+    color: #025373;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    margin-bottom: 40px;
+}
+
+
+/* CONTACT FORM */
+
+#contact form {
+    width: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* LABELS */
+
+#contact label {
+    display: block;
+
+    color: #025373;
+
+    font-size: 16px;
+
+    letter-spacing: 2px;
+
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+
+/* NAME, EMAIL AND SECURITY BOXES */
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="number"] {
+    display: block;
+
+    width: 100%;
+
+    background-color: white;
+
+    border: 2px solid #79C4F2;
+
+    border-radius: 5px;
+
+    padding: 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    box-sizing: border-box;
+}
+
+
+/* MESSAGE BOX */
+
+#contact textarea {
+    display: block;
+
+    width: 100%;
+    height: 180px;
+
+    background-color: white;
+
+    border: 2px solid #79C4F2;
+
+    border-radius: 5px;
+
+    padding: 12px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+
+    box-sizing: border-box;
+
+    resize: vertical;
+}
+
+
+/* WHEN INPUT IS CLICKED */
+
+#contact input:focus,
+#contact textarea:focus {
+    border-color: #048ABF;
+
+    outline: none;
+}
+
+
+/* SUBMIT BUTTON */
+
+#contact input[type="submit"] {
+    display: block;
+
+    width: 65%;
+
+    margin: 40px auto 0 auto;
+
+    padding: 13px;
+
+    background-color: #048ABF;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* SUBMIT BUTTON HOVER */
+
+#contact input[type="submit"]:hover {
+    background-color: #025373;
+
+    transform: scale(1.03);
+}
+
+/* 
+   FOOTER
+   */
+
+footer {
+    background-color: #025373;
+    color: white;
+
+    text-align: center;
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+
+/* Contact email */
+
+footer address {
+    margin-bottom: 12px;
+}
+
+
+/* Email link */
+
+footer a {
+    color: white;
+}
+
+
+/* Email hover */
+
+footer a:hover {
+    color: #79C4F2;
+}
+
+
+/* Copyright */
+
+footer p {
+    margin: 0;
+}
+
+
+/* 
+   PROJECTS PAGE
+    */
+
+#projects {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 40px 60px;
+
+    /* LINEAR GRADIENT */
+    background: linear-gradient(#F2F0F2, white);
+
+    border-top: 6px solid #048ABF;
+}
+
+
+/* PROJECTS TITLE */
+
+#projects > h2 {
+    color: #025373;
+
+    text-align: center;
+
+    font-size: 32px;
+
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+/* INTRODUCTION */
+
+.projects-intro {
+    color: #025373;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+
+    margin-bottom: 40px;
+}
+
+
+/* PROJECT BOXES */
+
+.project-box {
+    /* ANGLE LINEAR GRADIENT */
+    background: linear-gradient(
+        135deg,
+        white,
+        #F2F0F2,
+        #79C4F2
+    );
+
+    border-left: 6px solid #048ABF;
+
+    padding: 20px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    border-radius: 5px;
+}
+
+
+/* PROJECT TITLES */
+
+.project-box h3 {
+    color: #025373;
+
+    font-size: 21px;
+
+    margin-top: 0;
+}
+
+
+/* PROJECT TEXT */
+
+.project-box p {
+    color: #092626;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* PROJECT HOVER */
+
+.project-box:hover {
+    transform: scale(1.01);
+}
+
+#video-section {
+    text-align: center;
+    padding: 30px;
+}
+
+#video-section h2 {
+    color: #025373;
+}
+
+#video-section video {
+    width: 500px;
+    max-width: 90%;
+    border: 4px solid #048ABF;
+}
+
+
+/* Fluid design for all screen sizes */
+
+#wrapper {
+    width: 95%;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* Home page design */
+
+body {
+    background-color: #e8edf2;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+}
+
+main {
+    padding: 30px;
+}
+
+#welcome {
+    background-color: #F2F0F2;
+    padding: 30px;
+    text-align: center;
+    border-top: none;
+}
+
+#welcome h2 {
+    color: #1f3a5f;
+    font-size: 30px;
+}
+
+#welcome p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.page-button {
+    display: inline-block;
+    background-color: #025373;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin-top: 15px;
+}
+
+#welcome .page-button {
+    color: white;
+}
+
+.page-button:hover {
+    background-color: #048ABF;
+}
+
+/* Keep the footer at the bottom of short pages. */
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #edf3f7;
+  color: #172b3a;
+}
+
+/* Make the shared navigation compact and easy to tap. */
+body > header {
+  padding: 0.65rem 1rem;
+  background-color: #074b63;
+}
+
+body > header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 0.75rem;
+  margin: 0;
+  padding: 0;
+}
+
+body > header nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin: 0;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+body > header nav a:hover,
+body > header nav a:focus-visible {
+  background-color: #fff;
+  color: #074b63;
+}
+
+/* Give each page a readable content area. */
+main.portfolio-content {
+  flex: 1 0 auto;
+  width: calc(100% - 2rem);
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: #fff;
+  border: 1px solid #d9e4eb;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(23, 43, 58, 0.08);
+}
+
+.portfolio-content h1 {
+  margin: 0 0 1rem;
+  color: #074b63;
+}
+
+.portfolio-content p {
+  max-width: 65ch;
+  line-height: 1.65;
+}
+
+body > footer {
+  margin-top: auto;
+  padding: 1rem;
+  background-color: #074b63;
+  color: #fff;
+  text-align: center;
+}
+
+body > footer a {
+  display: inline-block;
+  margin: 0 0.4rem;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  main.portfolio-content {
+    margin: 1rem auto;
+    padding: 1.25rem;
+  }
+}
+
+.projects-page {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 3rem;
+}
+
+.projects-page .projects-intro {
+  margin-bottom: 1.75rem;
+  text-align: center;
+}
+
+.projects-page .projects-intro p {
+  max-width: 60ch;
+  margin: 0.5rem auto 0;
+}
+
+/* Keep Bootstrap's row gutters inside the page width. */
+.projects-page > .row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.projects-page .card {
+  overflow: hidden;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.projects-page .project-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background-color: #e8eff3;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .projects-page .card:hover {
+    position: relative;
+    z-index: 1;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 0.6rem 1.25rem rgba(23, 43, 58, 0.18) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-page {
+    padding: 1.5rem 0.75rem 2rem;
+  }
+}
+
+/* Keep the footer name, link labels, and icons the same size. */
+body > footer p,
+body > footer a,
+body > footer a i {
+  font-size: 1rem;
+}
+
+.projects-page {
+  width: 100%;
+  max-width: none;
+  padding: 2.5rem clamp(1rem, 2vw, 2rem) 4rem;
+}
+
+.projects-page .project-image {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 180px;
+  padding: 1rem;
+  object-fit: contain;
+  background-color: #f1f6f8;
+  border-bottom: 1px solid #d9e4eb;
+}
+
+@media (max-width: 600px) {
+  .projects-page .project-image {
+    height: 145px;
+  }
 }

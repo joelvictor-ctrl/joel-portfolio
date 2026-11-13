@@ -1,10 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %> | Joel Victor</title>
+  <%- include('partials/styles') %>
+</head>
+<body>
 <%- include('partials/header') %>
-<h1><%= title %></h1>
-<p>Here are some of my networking and programming projects.</p>
-<h2>VLAN and Inter-VLAN Routing Lab</h2>
-<p>I configured VLANs and trunk links, then set up router-on-a-stick so devices on different VLANs could communicate.</p>
-<p>I used SecureCRT to configure the network devices and used ping to verify connectivity.</p>
+<main class="projects-page">
+  <div class="projects-intro">
+    <h1><%= title %></h1>
+    <p>Explore my coursework in networking, cybersecurity, programming, and web development.</p>
+  </div>
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <article class="card h-100 shadow-sm">
+    <img class="card-img-top project-image" src="/images/vlsm.webp" alt="" loading="lazy">    
+      <div class="card-body">
+        <h2 class="h5">VLSM Network Design</h2>
+        <p>I planned an IPv4 network by sizing each subnet for its host requirements and calculating its address range.</p>
+        <span class="badge text-bg-light">IPv4 · VLSM · Subnetting</span>
+      </div>
+    </article>
+  </div>
 
-<h2>Portfolio Website</h2>
-<p>I built a four-page portfolio using HTML and CSS. I used media queries to adjust the layout for phones, tablets, and laptops, then published the site using GitHub Pages.</p>
+  <div class="col">
+    <article class="card h-100 shadow-sm">
+    <img class="card-img-top project-image" src="/images/eigrp.jpg" alt="EIGRP router topology illustration" loading="lazy">    
+      <div class="card-body">
+        <h2 class="h5">EIGRP Routing Lab</h2>
+        <p>I set up EIGRP on Cisco routers and checked routing tables to troubleshoot connectivity between networks.</p>
+        <span class="badge text-bg-light">Cisco IOS · EIGRP</span>
+      </div>
+    </article>
+  </div>
+
+  <div class="col">
+    <article class="card h-100 shadow-sm">
+        <img class="card-img-top project-image" src="/images/vrf.png" alt="" loading="lazy">
+      <div class="card-body">
+        <h2 class="h5">VRF-Lite Network Lab</h2>
+        <p>I used VRF-Lite to maintain separate routing tables and tested which devices could communicate.</p>
+        <span class="badge text-bg-light">VRF-Lite · Cisco Networking</span>
+      </div>
+    </article>
+  </div>
+
+  <div class="col">
+    <article class="card h-100 shadow-sm">
+        <img class="card-img-top project-image" src="/images/python.webp" alt="" loading="lazy">
+      <div class="card-body">
+        <h2 class="h5">Python Programming Project</h2>
+        <p>I wrote Python programs that organized data with sets and dictionaries and processed it with loops and functions.</p>
+        <span class="badge text-bg-light">Python · Sets · Dictionaries</span>
+      </div>
+    </article>
+  </div>
+
+  <div class="col">
+    <article class="card h-100 shadow-sm">
+        <img class="card-img-top project-image" src="/images/lan.png" alt="" loading="lazy">
+      <div class="card-body">
+        <h2 class="h5">LAN Security Analysis</h2>
+        <p>I studied common threats to local networks and how firewalls, access controls, and endpoint protection help reduce risk.</p>
+        <span class="badge text-bg-light">LAN Security · Threat Analysis</span>
+      </div>
+    </article>
+  </div>
+
+  <div class="col">
+    <article class="card h-100 shadow-sm">
+        <img class="card-img-top project-image" src="/images/website.jpg" alt="" loading="lazy">
+      <div class="card-body">
+        <h2 class="h5">Personal Portfolio Website</h2>
+        <p>For Assignment 1, I built a four-page portfolio with HTML and CSS, adapted it for different screen sizes, and published it on GitHub Pages.</p>
+        <span class="badge text-bg-light">HTML · CSS · GitHub Pages</span>
+      </div>
+    </article>
+  </div>
+</div>
+</main>
 <%- include('partials/footer') %>
+</body>
+</html>
